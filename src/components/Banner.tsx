@@ -2,7 +2,7 @@ export default function Banner() {
   const items = [
     'Free builds',
     'Fees donated',
-    'On-chain streams',
+    'Watch live',
   ]
 
   return (
