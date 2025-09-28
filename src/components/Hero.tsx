@@ -1,4 +1,6 @@
-import { PUMPFUN_URL } from '@/lib/links'
+ 
+
+import { COMMUNITY_URL } from '@/lib/links'
 
 export default function Hero() {
   return (
@@ -33,30 +35,26 @@ export default function Hero() {
               Get Started
             </a>
             <a
-              href="https://x.com/i/communities/1971948515443069280"
+              href={COMMUNITY_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="px-8 py-3 rounded-lg font-semibold border-2 border-white/15 text-white/80 hover:text-white hover:border-emerald-400/40 transition-all duration-300 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.12)]"
             >
               Join Community
             </a>
-            <a
-              href={PUMPFUN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               className="px-8 py-3 rounded-lg font-semibold border-2 border-emerald-400/40 text-emerald-300 hover:text-white hover:border-emerald-400/60 transition-all duration-300 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.18)]"
+              type="button"
             >
               Buy VCC
-            </a>
-            <a
-              href={PUMPFUN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            </button>
+            <button
               className="px-8 py-3 rounded-lg font-semibold border-2 border-white/15 text-white/80 hover:text-white hover:border-emerald-400/40 transition-all duration-300 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.12)]"
               style={{animationDelay: '150ms'}}
+              type="button"
             >
               Watch Live
-            </a>
+            </button>
           </div>
           <p className="mt-6 text-white/60 text-sm fade-up" style={{animationDelay: '200ms'}}>
             Ideas for features or sites? DM or post in the community.

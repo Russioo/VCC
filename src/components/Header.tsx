@@ -1,5 +1,5 @@
- 'use client'
-import { PUMPFUN_URL } from '@/lib/links'
+'use client'
+import { COMMUNITY_URL } from '@/lib/links'
 
 export default function Header() {
   return (
@@ -19,7 +19,7 @@ export default function Header() {
             <a href="#about" className="text-white/60 hover:text-vibe-green transition-colors">About</a>
             <a href="#services" className="text-white/60 hover:text-vibe-green transition-colors">Services</a>
             <a
-              href="https://x.com/i/communities/1971948515443069280"
+              href={COMMUNITY_URL}
               target="_blank"
               rel="noopener noreferrer"
               aria-label="X Community"
@@ -46,14 +46,12 @@ export default function Header() {
                 </svg>
               </span>
             </a>
-            <a
-              href={PUMPFUN_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               className="bg-vibe-green text-white px-4 py-2 rounded-md font-semibold transition-all duration-300 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.2)] hover:scale-[1.02]"
+              type="button"
             >
               Buy VCC
-            </a>
+            </button>
           </nav>
           
           <div className="md:hidden">
