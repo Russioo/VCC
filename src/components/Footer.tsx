@@ -1,6 +1,6 @@
  
 
-import { COMMUNITY_URL } from '@/lib/links'
+ 
 
 export default function Footer() {
   return (
@@ -32,18 +32,16 @@ export default function Footer() {
           </div>
           
           <div className="flex md:justify-end gap-3">
-            <a
-              href={COMMUNITY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               aria-label="X Community"
               className="inline-flex items-center justify-center w-10 h-10 rounded-md border border-white/10 hover:border-emerald-400/40 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.08)] text-white/70 hover:text-white transition-colors"
               title="X Community"
+              type="button"
             >
               <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                 <path d="M4 4l16 16M20 4L4 20" strokeWidth="2" strokeLinecap="round" />
               </svg>
-            </a>
+            </button>
             <a
               href="https://github.com/Russioo"
               target="_blank"

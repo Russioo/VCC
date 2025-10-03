@@ -1,5 +1,5 @@
 'use client'
-import { COMMUNITY_URL } from '@/lib/links'
+ 
 
 export default function Header() {
   return (
@@ -18,20 +18,18 @@ export default function Header() {
           <nav className="hidden md:flex items-center space-x-6">
             <a href="#about" className="text-white/60 hover:text-vibe-green transition-colors">About</a>
             <a href="#services" className="text-white/60 hover:text-vibe-green transition-colors">Services</a>
-            <a
-              href={COMMUNITY_URL}
-              target="_blank"
-              rel="noopener noreferrer"
+            <button
               aria-label="X Community"
               className="text-white/70 hover:text-white transition-colors"
               title="X Community"
+              type="button"
             >
               <span className="inline-flex items-center justify-center w-9 h-9 rounded-md border border-white/10 hover:border-emerald-400/40 hover:shadow-[0_0_0_4px_rgba(16,185,129,0.08)]">
                 <svg className="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor">
                   <path d="M4 4l16 16M20 4L4 20" strokeWidth="2" strokeLinecap="round" />
                 </svg>
               </span>
-            </a>
+            </button>
             <a
               href="https://github.com/Russioo"
               target="_blank"
